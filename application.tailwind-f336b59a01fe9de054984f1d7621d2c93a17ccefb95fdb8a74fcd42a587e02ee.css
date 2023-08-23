@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-outline {
+    @apply flex flex-col sm:flex-row mt-2 mx-2 lg:mx-0
+  }
+
+  .btn {
+    @apply w-full bg-white border border-dark p-4 text-center text-dark text-xl uppercase font-semibold
+  }
+
+  .sb-link {
+    @apply flex p-2 py-4 lg:py-2 border border-dark bg-light mb-2 hover:bg-light-selected truncate
+  }
+
+  .title {
+    @apply text-2xl font-semibold
+  }
+
+  .description {
+    @apply p-2 mb-3 border border-dark bg-light text-sm overflow-auto
+  }
+
+  .subtitle {
+    @apply py-px text-xl font-semibold
+  }
+
+  table {
+    @apply inline-table w-full my-4 table-auto border-collapse border border-slate-400
+  }
+
+  td {
+    @apply border border-slate-300 text-center py-1 px-2
+  }
+
+  .table {
+    @apply bg-light border border-dark font-semibold
+  }
+
+  .table td {
+    @apply odd:text-right odd:w-[200px] even:text-left border border-dark p-2
+  }
+}
